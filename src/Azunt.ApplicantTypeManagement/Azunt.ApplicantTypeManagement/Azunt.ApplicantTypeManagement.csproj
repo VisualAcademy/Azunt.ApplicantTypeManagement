@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <!-- 버전 정보 -->
+        <VersionPrefix>1.0.0</VersionPrefix>
+        <VersionSuffix></VersionSuffix>
+
+        <!-- NuGet 메타데이터 -->
+        <Title>Azunt.ApplicantTypeManagement</Title>
+        <Description>Azunt.ApplicantTypeManagement is a reusable .NET module for managing applicantType codes and descriptions in multi-tenant applications. It supports EF Core, Dapper, and ADO.NET with SQL Server.</Description>
+        <PackageTags>Azunt, applicantType, codes, multi-tenant, EFCore, Dapper, ADO.NET, Blazor, SQLServer</PackageTags>
+
+        <Authors>VisualAcademy</Authors>
+        <Company>Hawaso</Company>
+
+        <!-- NuGet 링크 및 저장소 -->
+        <PackageProjectUrl>https://github.com/VisualAcademy/Azunt.ApplicantTypeManagement</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/VisualAcademy/Azunt.ApplicantTypeManagement</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+
+        <!-- 저작권 -->
+        <Copyright>© 2025 Hawaso. All rights reserved.</Copyright>
+
+        <!-- README 및 License 파일 지정 -->
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azunt" Version="1.1.7" />
+        <PackageReference Include="Dapper" Version="2.1.66" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.1" />
+        <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.1" />
+
+        <!-- 솔루션 루트의 파일을 NuGet에 포함 -->
+        <None Include="..\..\..\README.md" Pack="true" PackagePath="" />
+        <None Include="..\..\..\LICENSE" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+</Project>
